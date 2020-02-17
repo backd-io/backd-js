@@ -1,4 +1,27 @@
 {
-    "name": "backd-js",
-    "version": "0.2"
+  "name": "backd-js",
+  "version": "0.0.1",
+  "description": "backd.io backend client for javascript",
+  "main": "lib/index.js",
+  "repository": "git@github.com:backd-io/backd-js.git",
+  "author": "Antonio Fdez. (backd) <antoniofernandezvara+backd@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "watch": "babel src --watch --out-dir lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "url-join": "^4.0.1"
+  }
 }
